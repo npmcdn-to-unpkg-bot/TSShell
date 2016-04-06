@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TypeScript Shell</title>
+    <script src="//npmcdn.com/typescript@1.8.9/lib/typescript.js"></script>
+    <script src="//npmcdn.com/systemjs@0.19.25/dist/system.src.js"></script>
+    <script>
+        System.config({
+            transpiler: 'typescript',
+            typescriptOptions: {emitDecoratorMetadata: true}
+        });
+        System.import('app.ts');
+    </script>
+</head>
+<body>
+  <h1>Shell for modular TypeScript apps</h1>
+</body>
+</html>
